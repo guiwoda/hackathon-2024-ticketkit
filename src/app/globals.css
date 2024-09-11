@@ -25,3 +25,124 @@ body {
     text-wrap: balance;
   }
 }
+
+.events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.event-item {
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.event-item:hover {
+  transform: scale(1.02);
+}
+
+.event-image {
+  object-fit: cover;
+}
+
+.event-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+input[readonly] {
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+}
+
+.error {
+  color: red;
+  margin-bottom: 1rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+  gap: 1rem;
+}
+
+header a {
+  background-color: #3182ce;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+header a:hover {
+  background-color: #2b6cb0;
+}
+
+header button {
+  background-color: #e53e3e;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+header button:hover {
+  background-color: #c53030;
+}
+
+.payment-settings {
+  margin-top: 1rem;
+}
+
+.payment-settings h2 {
+  margin-bottom: 0.5rem;
+}
+
+.payment-settings input,
+.payment-settings select {
+  margin-bottom: 0.5rem;
+}
+
+.recipient-address {
+  margin-top: 1rem;
+}
+
+.recipient-address h2 {
+  margin-bottom: 0.5rem;
+}
+
+.recipient-address input {
+  margin-bottom: 0.5rem;
+}
+
+.fee {
+  margin-top: 1rem;
+}
+
+.fee h2 {
+  margin-bottom: 0.5rem;
+}
+
+.fee input {
+  margin-bottom: 0.5rem;
+}
